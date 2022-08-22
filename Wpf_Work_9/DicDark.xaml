@@ -22,4 +22,7 @@
     <Style x:Key="CanvasStyle" BasedOn="{StaticResource WinStyle}">
         <Setter Property="InkCanvas.Background" Value="Gray"/>
     </Style>
+    <Style x:Key="MenuStyle" BasedOn="{StaticResource WinStyle}">
+        <Setter Property="MenuItem.Background" Value="Gray"/>
+    </Style>
 </ResourceDictionary>

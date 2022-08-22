@@ -25,16 +25,16 @@
                 </Grid.RowDefinitions>
                 <ToolBarTray Grid.Row="0" >
                     <ToolBar  Height="55" Style="{DynamicResource ToolBarStyle}">
-                        <Menu Margin="3" Padding="3" HorizontalAlignment="Center" VerticalAlignment="Center">
-                            <MenuItem Header="Фаил">
-                                <MenuItem Header="_Открыть" Command="Open"/>
-                                <MenuItem Header="_Сохранить" Command="Save"/>
+                        <Menu Margin="3" Padding="3" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                            <MenuItem Header="Фаил" Style="{DynamicResource MenuStyle}">
+                                <MenuItem Header="_Открыть" Command="Open" Style="{DynamicResource MenuStyle}"/>
+                                <MenuItem Header="_Сохранить" Command="Save" Style="{DynamicResource MenuStyle}"/>
                                 <Separator/>
-                                <MenuItem  Command="local:MyCommands.Exit"/>
+                                <MenuItem  Command="local:MyCommands.Exit" Style="{DynamicResource MenuStyle}"/>
                             </MenuItem>
-                            <MenuItem x:Name="styleBox" Header="Тема"  >
-                                <MenuItem Header="_Светлая" Click="MenuItem_Click_6"/>
-                                <MenuItem Header="_Темная" Click="MenuItem_Click_7"/>
+                            <MenuItem x:Name="styleBox" Header="Тема" Style="{DynamicResource MenuStyle}">
+                                <MenuItem Header="_Светлая" Click="MenuItem_Click_6" Style="{DynamicResource MenuStyle}"/>
+                                <MenuItem Header="_Темная" Click="MenuItem_Click_7" Style="{DynamicResource MenuStyle}"/>
                             </MenuItem>
                         </Menu>
                     </ToolBar>
@@ -72,7 +72,6 @@
                             <RadioButton Content="Черный" IsChecked="True" Checked="RadioButton_Checked"/>
                             <RadioButton Content="Красный" Click="RadioButton_Click"/>
                         </StackPanel>
-                        <!--<ComboBox x:Name="styleBox"/>-->
                     </ToolBar>
                 </ToolBarTray>
                 <TextBox x:Name="textBox" Grid.Row="1" Margin="5" Padding="5" TextWrapping="Wrap" Style="{DynamicResource TextBlStyle}">
@@ -89,11 +88,11 @@
                 <ToolBarTray Grid.Row="0" >
                     <ToolBar Style="{DynamicResource ToolBarStyle}">
                         <Menu Margin="3" Padding="3">
-                            <MenuItem Header="Фаил" >
-                                <MenuItem  Command="Open"/>
-                                <MenuItem  Command="Save"/>
+                            <MenuItem Header="Фаил"  Style="{DynamicResource MenuStyle}">
+                                <MenuItem  Command="Open" Style="{DynamicResource MenuStyle}"/>
+                                <MenuItem  Command="Save" Style="{DynamicResource MenuStyle}"/>
                                 <Separator/>
-                                <MenuItem  Command="local:MyCommands.Exit"/>
+                                <MenuItem  Command="local:MyCommands.Exit" Style="{DynamicResource MenuStyle}"/>
                             </MenuItem>
                         </Menu>
                     </ToolBar>
@@ -108,7 +107,7 @@
                         </StackPanel>
                         <Separator/>
                         <ComboBox x:Name="comboColors"  Width="120" Padding="3" Margin="3" SelectedIndex="0" VerticalContentAlignment="Center" SelectionChanged="comboColors_SelectionChanged">
-                            <TextBlock Text="Черный" />
+                            <TextBlock Text="Черный"  />
                             <TextBlock Text="Зеленый" />
                             <TextBlock Text="Красный" />
                         </ComboBox>

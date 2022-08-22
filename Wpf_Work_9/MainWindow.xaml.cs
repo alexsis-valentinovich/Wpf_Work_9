@@ -76,7 +76,7 @@ namespace Wpf_Work_9
         }
 
 
-        private void MenuItem_Click_2 (object sender, RoutedEventArgs e)
+        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
         {
             OpenFileDialog OpenFileDialog = new OpenFileDialog();
             OpenFileDialog.Filter = "Текстовые файл, .txt|*.txt|Все файлы, *.*|*.*";
@@ -85,7 +85,7 @@ namespace Wpf_Work_9
                 textBox.Text = File.ReadAllText(OpenFileDialog.FileName);
             }
         }
-        private void MenuItem_Click_5 (object sender, RoutedEventArgs e)
+        private void MenuItem_Click_5(object sender, RoutedEventArgs e)
         {
             SaveFileDialog SaveFileDialog = new SaveFileDialog();
             SaveFileDialog.Filter = "Текстовые файл, .txt|*.txt|Все файлы, *.*|*.*";
